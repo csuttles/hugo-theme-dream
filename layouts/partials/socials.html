@@ -62,4 +62,12 @@
       </a>
     </div>
   {{ end }}
+  {{ if .Site.Params.hackthebox }}
+    <div class="item">
+      <a href="https://hackthebox.eu/profile/{{ .Site.Params.hackthebox }}" target="_blank">
+        <i class="{{ .IconSize }} box icon" title="hackthebox"></i>
+      </a>
+    </div>
+  {{ end }}
+
 </nav>
