@@ -89,6 +89,8 @@ function toggleDark() {
 
 let isDark = localStore.getItem('hugo-theme-dream-is-dark')
 const iconSwitchs = $('.theme-switch').toArray()
+// Set this to default to the dark theme.
+isDark = 'y'
 
 // Apply theme when first entering
 if (isDark) {
